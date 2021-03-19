@@ -1,0 +1,41 @@
+#page-map {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  display: flex;
+}
+
+#page-map .create-orphanage {
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+
+  width: 64px;
+  height: 64px;
+  background: #15c3d6;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-map .create-orphanage:hover {
+  background-color: #17d6eb;
+}
+
+@media (max-width: 768px) {
+  #page-map {
+    height: auto;
+    position: relative;
+    
+    flex-direction: column;
+  }
+
+  #page-map .create-orphanage {
+    right: 70px;
+    bottom: 30px;
+  }
+}

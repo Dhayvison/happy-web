@@ -1,0 +1,8 @@
+{
+  "cSpell.words": [
+    "Whatsapp"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+}

@@ -1,0 +1,43 @@
+div.aside-map {
+  width: 20%;
+  background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.aside-map h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-top: 60px;
+}
+
+div.aside-map p {
+  line-height: 28px;
+  margin-top: 24px;
+}
+
+div.aside-map footer {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+}
+
+@media (max-width: 768px) {
+  div.aside-map {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+  }
+
+  div.aside-map h2 {
+    margin-top: 24px;
+  }
+
+  div.aside-map footer {
+    margin-top: 24px;
+  }
+
+}

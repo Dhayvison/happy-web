@@ -1,0 +1,64 @@
+div.marker {
+  z-index: 0;
+}
+
+div.marker:hover *{
+  z-index: 100;
+}
+
+div.marker * {
+  transition: all 0.3s ease-out;
+}
+
+div.marker .marker-icon {
+  position: absolute;
+  transform: translate(-50%, -100%);
+}
+
+div.marker:hover .marker-icon {
+  transform: translate(-50%, -100%) scale(1.5);
+}
+
+div.marker .marker-details {
+  position: absolute;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+  width: max-content;
+  padding: 20px;
+  -webkit-box-shadow: 0px 25px 25px -1px rgba(0,0,0,0.1); 
+  box-shadow: 0px 25px 25px -1px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  animation: appear 0.3s ease-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+div.marker .marker-details h2.marker-details-title{
+  color: #0089a5;
+  font-size: 1.5em;
+}
+
+div.marker .marker-details a{
+  width: 34px;
+  height: 34px;
+  background: #15c3d6;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 20px;
+}
