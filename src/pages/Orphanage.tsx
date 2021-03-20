@@ -18,7 +18,6 @@ export default function Orphanage() {
   React.useEffect(() => {
     api.get(`/orphanages/${id}`).then((response) => {
       setOrphanage(response?.data)
-      console.log(response?.data);
     })
   }, [id])
 

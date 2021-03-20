@@ -16,7 +16,6 @@ export default function OrphanagesMap() {
     api.get('/orphanages').then(
       (response) => {
         setOrphanages(response?.data);
-        console.log(response.data);
       }
     )
   }, [])
